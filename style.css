@@ -1,31 +1,87 @@
-div table thead tr th img{
+/* /* Background styles */
+body {
+    background-color: #2d3c56;
+    background-image:
+        radial-gradient(at 47% 33%, hsl(283.28, 53%, 46%) 0, transparent 59%),
+        radial-gradient(at 82% 65%, hsl(217.01, 72%, 47%) 0, transparent 55%);
+}
+
+/* Glassmorphism card effect */
+.custom-glass-morphism {
+    backdrop-filter: blur(23px) saturate(20%);
+    -webkit-backdrop-filter: blur(23px) saturate(20%);
+    background-color: rgba(180, 189, 204, 0.6);
+    border-radius: 12px;
+    border: 1px solid rgba(249, 243, 243, 0.125);
+}
+
+.custom-glass-morphism-text {
+    /* From https://css.glass */
+    background: rgba(165, 107, 246, 0.45);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.4px);
+    -webkit-backdrop-filter: blur(8.4px);
+    border: 1px solid rgba(116, 47, 213, 0.74);
+    font-weight: bold;
+
+}
+
+.center-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div table thead tr th img {
     width: 60px;
     height: 60px;
 }
-div table tr td img{
+
+div table tr td img {
     width: 60px;
     height: 60px;
 }
+
 div table .thead {
     background-color: rgba(10, 4, 23, 0.751);
     color: white;
 }
+
 .custom-link {
-    color: #007bff; 
-    text-decoration: none; 
+    color: #007bff;
+    text-decoration: none;
     transition: opacity 0.3s;
-    text-shadow: 0px 0px 1px ;
+    text-shadow: 0px 0px 1px;
 }
 
 .custom-link:hover {
-    opacity: 0.5; 
+    opacity: 0.5;
 }
+
 .custom-link-num {
-    color: #007bff; 
-    text-decoration: none; 
+    color: #007bff;
+    text-decoration: none;
     transition: opacity 0.3s;
 }
 
 .custom-link-num:hover {
-    opacity: 0.5; 
+    opacity: 0.5;
 }
+
+.carousel-img {
+    height: 700px;
+    object-fit: cover;
+}
+
+.custom-pust-logo {
+    height: 5%;
+    width: 5%;
+    padding-right: 5px;
+}
+/* .custom-img-height{
+    height: auto;
+    object-fit: cover;
+    /* background-size: cover;  */
+/* background-position: center; 
+    background-repeat: no-repeat; }*/
